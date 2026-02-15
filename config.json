@@ -1,0 +1,26 @@
+{
+  "trade_pairs": ["btcusdt", "ethusdt"],
+  "ws": {
+    "host": "stream.binance.com",
+    "port": "9443",
+    "handshake_timeout_sec": 10,
+    "idle_timeout_sec": 10
+  },
+  "retry": {
+    "base_retry_sec": 1,
+    "max_retry_sec": 30,
+    "max_retry_attempts": 32
+  },
+  "agg": {
+    "period_ms": 1000
+
+  },
+  "output": {
+    "write_period_ms": 5000,
+    "write_delay_ms": 0,
+    "filename": "aggregates.log",
+    "max_file_mb": 10,
+    "max_files": 10,
+    "console_report": true
+  }
+}

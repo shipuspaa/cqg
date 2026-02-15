@@ -1,0 +1,5 @@
+build/
+.conan2/
+.vscode/
+.git/
+CMakeUserPresets.json
